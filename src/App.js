@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+ 
+const Number =({numbers}) =>(
+      <li>
+        <div className="text" contentEditable="true" spellCheck="false">
+                {numbers}
+        </div>
+      </li>
+  
+);
 
-function App() {
+  
+
+const App= () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="arrow"></div>
+      <ul className="circle">
+         <Number numbers="1"/>
+         <Number numbers="2"/>
+         <Number numbers="3"/>
+         <Number numbers="4"/>
+         <Number numbers="5"/>
+         <Number numbers="6"/>
+         <Number numbers="7"/>
+         <Number numbers="8"/>
+         <Number numbers="9"/>
+         <Number numbers="10"/>
+         <Number numbers="11"/>
+         <Number numbers="12"/>
+      </ul>
+      <button className="spin-button" >SPIN</button>
     </div>
   );
 }
